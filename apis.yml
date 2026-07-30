@@ -1,8 +1,25 @@
 aid: miracle-miles
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/miracle-miles.png
 name: Miracle Miles
-description: 'Miracle Miles is a company surfaced as a portfolio company of hongshan and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Miracle Miles (Miracle Miles Group) is a consumer footwear e-commerce
+  company backed by Hongshan (Sequoia China). It designs, manufactures, and sells
+  affordable fashion footwear and accessories direct-to-consumer through a family of
+  online brands, including DREAM PAIRS (launched 2009), Bruno Marc (men''s footwear),
+  Nortiv 8 (outdoor), and Dream Pairs Kids, selling primarily via its own storefronts
+  and large online marketplaces. As of this enrichment pass the company publishes no
+  public developer API, developer portal, or machine-readable API surface; this profile
+  is maintained as a company/lead record in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/miracle-miles/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Footwear
+- Ecommerce
+- Retail
+- Consumer Goods
+- Direct to Consumer
 apis: []
+common:
+- type: DomainSecurity
+  url: security/miracle-miles-domain-security.yml
+- type: Website
+  url: https://www.dreampairs.com/
+- type: Company
+  url: https://www.miraclemilesgroup.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
